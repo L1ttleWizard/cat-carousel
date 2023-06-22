@@ -1,5 +1,7 @@
+
 // Get the value of the "color" cookie
 const colorValue = getCookie('color');
+console.log(getCookie('color'));
 
 // Import functions
 import * as APIList from './apilist.js';
@@ -75,7 +77,7 @@ if (window.location.search.includes('free=1')) {
     window.location.href = 'https://free.navalny.com';
   }
 }
-
+console.log(document.cookie)
 async function fetchCatImages() {
   // Get the value of the "CurAPI" cookie
   let curAPIValue = getCookie('CurAPI');
